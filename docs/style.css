@@ -274,13 +274,12 @@ nav a:hover{
 
 /* === Projects ===*/
 .projects{
-    display:flex;
-    /* background-color: yellow ; */
-
-    justify-content: space-between;
+    display:flex; 
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin-top: 5vh;
+    flex-wrap:wrap;
 }
 
 #projects{
@@ -340,6 +339,7 @@ form{
     align-items: center;
 }
 
+
 form input{
     border-radius: 28px;
     border: 0px;
@@ -362,7 +362,6 @@ button{
 .f1{
     height:25px;
     width: 100%;
-
 }
 
 .f2{
@@ -392,11 +391,17 @@ footer{
 
 }
 
-footer img{
+footer a img{
     width: 3vw;
     height: 6vh;
     padding-right: 2%;
 }
+
+footer p{
+    font-size:12px;
+}
+
+
 
 
 @media (max-width:840px){
@@ -405,34 +410,51 @@ footer img{
         margin-top:20px;
     }
 
-    .projects_container img{
-        height: 20vh;
+    .projects{
+        gap: 10px;
     }
 
-     .projects{
-        flex-flow: column;
-        gap:23px
-
-    }
 
     .projects_container{
-        width: 70%;
-        padding-bottom: 20px;
+        width: 200px;
         border: 0px;
-        background-color:rgba(241, 241, 241, 0.534);
+    } 
+
+    .projects_container img{
+         height: 200px;
     }
-/* 
+
+
     p{
-        font-size: 0.8em;
+        font-size: 18px;
     }
+
+    nav a{
+        font-size: 16px; 
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
 
     .presentation p{
+        font-size: 20px;
+        padding: 3px;
+    } 
+
+    /* h1, h2, p{
         font-size: 0.8em;
+    }  */
+
+    h1{
+        font-size: 30px;
     }
 
-    h1, h2, p{
-        font-size: 0.8em;
-    } */
+    h2{
+        font-size: 20px;
+    }
+
 
     .skills{   
         flex-direction: column;
@@ -469,8 +491,6 @@ footer img{
         margin-bottom: 3px;
     }
 
-   
-
 
    .footer{
        margin-bottom: -2px;
@@ -479,9 +499,6 @@ footer img{
     } 
 
  
-    nav a{
-        font-size: 0.6em; 
-    }
 
     .info2{
         margin-top: -40px;
@@ -492,14 +509,34 @@ footer img{
         border-radius: 10px;
     }
 
-    footer img{
+    footer a img{
         width: 3vw;
         height: 2vh;
         padding-right: 2%;
     }
+
+    .chargePercent p{
+        font-size:0.9em;
+
+    }
+
+}
     
+    @media (max-width:250px) {
 
+        nav a{
+            font-size: 10px; 
+        }
 
+        .info2{
+            flex-flow: column;
+            align-items: center;
+            gap: 5px;
+        }
 
+        .info2 img, .more img{
+            width:38.5px;
+            height:38.5px;
+        }
 
     }
