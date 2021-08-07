@@ -1,0 +1,15 @@
+body{
+    display:center;
+    align-items: center;
+    text-align:center;
+    padding-top: 35vh;
+}
+
+img{
+    width: 10vh;
+    margin-top: 5vh;
+}
+
+img:hover{
+    transform: scale(1.1)
+}

@@ -209,9 +209,12 @@ header{
 
 .more img{
     width: 10vw;
-    height: 8vw
+    height: 10vw
 }
 
+.addimg:hover{
+    transform:scale(1.1)
+}
 
 /* === Skills ===*/
 
@@ -416,16 +419,6 @@ i{
     color:gray
 }
 
-.thanks{
-    text-align:center;
-    margin: 2%;
-    display: none;
-}
-
-.thanks.visible{
-
-    display:block;
-}
 
 @media (max-width:840px){
 
