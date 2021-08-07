@@ -183,6 +183,15 @@ nav a:hover{
 
 .infoimg{
     width: 35%;
+    /* background-color: aqua; */
+}
+
+.infoimg:hover{
+  transform: scale(1.2); 
+}
+
+header{
+    transition: 1s;
 }
 
 /* Info container sobra ? */
@@ -242,7 +251,7 @@ nav a:hover{
 .skills img{
     width: 8vw;
     margin: 2%;
-    background-color: rgba(255, 255, 255, 0.561);
+    /* background-color: rgba(255, 255, 255, 0.561); */
     border-radius:40px;
     margin-right: 3vw;
 }
@@ -372,7 +381,8 @@ button{
 button{
     width:20%;
     justify-content:center;
-    background-color:rgba(142, 186, 255, 1)
+    background-color:rgb(76,187,217,255);
+    height:25px;
 }
 
 
@@ -387,7 +397,8 @@ footer{
     align-items: center;
     height: 100%;
     margin-bottom: -20px;
-    color: rgba(25, 39, 84, 1);
+    color: rgba(53, 148, 126, 1);
+    border-top: solid 1px ;
 
 }
 
@@ -401,8 +412,20 @@ footer p{
     font-size:12px;
 }
 
+i{
+    color:gray
+}
 
+.thanks{
+    text-align:center;
+    margin: 2%;
+    display: none;
+}
 
+.thanks.visible{
+
+    display:block;
+}
 
 @media (max-width:840px){
 
@@ -475,7 +498,6 @@ footer p{
     }
 
     .separator{
-        height:20px;
         margin-top:1px;
         background-color:rgba(255, 0, 0, 0);
     }
@@ -519,6 +541,12 @@ footer p{
         font-size:0.9em;
 
     }
+
+    .about, #skills, #projects{
+        padding-top: 35px;
+    }
+
+
 
 }
     
