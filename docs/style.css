@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 
 *{    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:'Playfair Display', serif;;
-   
+    font-family:'Playfair Display', serif;
 }
+
+
+header h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 54px;
+} 
 
 /* azul = rgba(25, 39, 84, 1)
 azul claro = rgba(142, 186, 255, 1)
@@ -14,6 +19,9 @@ gris= rgba(148, 156, 172, 1)
 verde=rgba(53, 148, 126, 1)*/
 
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     color: rgb(76,187,217,255);
@@ -22,9 +30,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;   
+
 }
-
-
 
 
 h1{
@@ -59,6 +66,8 @@ header{
     background-color:rgba(25, 39, 84, 0.8);
     padding-bottom: 20px;
 }
+
+
 
 
 header img{
@@ -267,23 +276,62 @@ header{
     color:white;
 }
 
-.chargePercent{
+.chargePercent {
     width: 50%;
     background-color:rgba(142, 186, 255, 1) ;
     border-radius: 35px;
     height: 1.5em;
-
+    animation: progres1 7s infinite linear;
+    
 }
 
-.back1 .chargePercent{
+@keyframes progres1{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+}
+   
+
+.chargePercent_py{
     width: 65%;
-    background-color:rgba(53, 148, 126, 1) ;
+    background-color:rgba(53, 148, 126, 1);
+    border-radius: 35px;
+    height: 1.5em;
+    animation: progres2 7s infinite linear;
 }
 
-.back2 .chargePercent{
-    width: 30%;
-    background-color:rgba(53, 148, 126, 1) ;
+@keyframes progres2{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 65%;
+    }
 }
+
+.chargePercent_ja{
+    width: 25%;
+    background-color:rgba(53, 148, 126, 1);
+    border-radius: 35px;
+    height: 1.5em;
+    animation: progres3 7s infinite linear;
+}
+
+@keyframes progres3{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 25%;
+    }
+}
+
+
+
+
 
 /* === Projects ===*/
 .projects{
@@ -416,8 +464,9 @@ footer p{
     font-size:12px;
 }
 
-i{
-    color:gray
+a i{
+    color:rgb(76,187,217,255);
+
 }
 
 
