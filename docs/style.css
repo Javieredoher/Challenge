@@ -207,12 +207,12 @@ header{
     gap:40px;
 }
 
-.more img{
+#my{
     width: 10vw;
     height: 10vw
 }
 
-.addimg:hover{
+#my:hover{
     transform:scale(1.1)
 }
 
