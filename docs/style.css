@@ -151,8 +151,6 @@ nav a:hover{
 /* === About me === */
 
 .about {
-
-    
     
     display:flex;   
     text-align: center;
@@ -566,7 +564,7 @@ a i{
  
 
     .info2{
-        margin-top: -40px;
+        margin-top: 0px;
     }
 
     header img{
@@ -587,6 +585,7 @@ a i{
 
     .about, #skills, #projects{
         padding-top: 35px;
+        margin-bottom: 10px;
     }
 
 
