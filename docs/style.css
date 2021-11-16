@@ -534,7 +534,7 @@ a i{
         margin-top: 1px;
     }
 
-    .chargebar, .chargePercent{
+    .chargebar, .chargePercent,.chargePercent_py,.chargePercent_ja{
         height:1em;
     }
 
@@ -587,8 +587,6 @@ a i{
         padding-top: 35px;
         margin-bottom: 10px;
     }
-
-
 
 }
     

@@ -8,6 +8,8 @@
     <title>JHC-Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -101,7 +103,7 @@
     <h1 id="skills">Skills:</h1>
 
     <div class="skills">
-        <div class="Front-end">
+        
             <div class="front">
                 <img src="assets/images/skills/1.png" alt="Html_icon" />
                 <div class="chargebar">
@@ -129,16 +131,29 @@
                 </div>
             </div>
 
-        </div>
-
-
-
-        <div class="Back-end">
             <div class="back1">
                 <img src="assets/images/skills/Py.png" alt="Python_icon" />
                 <div class="chargebar">
                     <div class="chargePercent_py">
                         <p>65%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="front">
+                <img src="assets/images/skills/React_logo.png" alt="React_icon" />
+                <div class="chargebar">
+                    <div class="chargePercent">
+                        <p>50%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="front">
+                <img src="assets/images/skills/Angular_logo.png" alt="Angular_icon" />
+                <div class="chargebar">
+                    <div class="chargePercent">
+                        <p>50%</p>
                     </div>
                 </div>
             </div>
@@ -152,13 +167,21 @@
                 </div>
             </div>
 
-        </div>
+            <div class="back2">
+                <img src="assets/images/skills/Mysql_logo.png" alt="MySql_icon" />
+                <div class="chargebar">
+                    <div class="chargePercent_ja">
+                        <p>25%</p>
+                    </div>
+                </div>
+            </div>
+
 
     </div>
 
     <h1 id="projects"> Projects:</h1>
 
-    <div class="projects">
+    <!-- <div class="projects">
         <div class="projects_container">
             <img src="assets/images/Projects/xcards.png" alt="Expanding cards">
 
@@ -191,6 +214,50 @@
             </div>
 
         </div>
+ -->
+
+ <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/Projects/Music_store.JPG" class="card-img-top" alt="Music_store" />
+        <div class="card-body">
+          <h5 class="card-title">Music Store</h5>
+          <p class="card-text">Project created with Html, Css and Javascript: Presents a musical store with an interactive piano. It works with music API request.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+          <img src="assets/images/Projects/Challenges.JPG" class="card-img-top" alt="Challenges">
+          <div class="card-body">
+            <h5 class="card-title">Challenges</h5>
+            <p class="card-text">Project created with Html, Css and Javascript with React: It presents a collection of different functionalities that can be use in a web develop. </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/Projects/totalFood.JPG" class="card-img-top" alt="total_food">
+        <div class="card-body">
+          <h5 class="card-title">Total food</h5>
+          <p class="card-text">A project made in React, using hooks, with a purchase card and connected with WhatsApp to send orders by message. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="assets/images/Projects/Crud.JPG" class="card-img-top" alt="Crud_Angular">
+        <div class="card-body">
+          <h5 class="card-title">Crud</h5>
+          <p class="card-text">Movies crud made with Angular, express and MySql. It lets create, edit, delete elements connected with the database </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     </div>
 
